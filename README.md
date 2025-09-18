@@ -51,8 +51,6 @@ Dynamic UI updates
 
 Clone this repo:
 
-git clone https://github.com/YourUsername/Simple-ToDo-App.git
-
 
 Open index.html in any browser
 
