@@ -159,3 +159,40 @@ body {
   text-decoration: line-through; /* চাইলে লাইন কেটে দিতে পারো */
 }
 
+@media (max-width: 480px) {
+  #conteiner {
+    width: 98%;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  #usearInput {
+    font-size: 13px;
+    padding: 6px;
+    width: 90%;
+  }
+
+  #todoBTN {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .fromall li {
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 32px;
+    height: 26px;
+    font-size: 12px;
+  }
+
+  #caunter {
+    font-size: 13px;
+    top: 10px;
+  }
+}
