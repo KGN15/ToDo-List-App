@@ -1,0 +1,161 @@
+#conteiner {
+  width: 400px;
+  height: 580px;
+  background-color: rgb(192, 201, 201);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: 2px solid #ccc;
+  transition: box-shadow 0.3s ease;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#usearInput {
+  height: 30px;
+  width: 270px;
+  margin: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+#todoBTN {
+  height: 36px;
+  width: 85px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: green;
+}
+#todoBTN:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
+#todoList {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 16px;
+  color: #555;
+  min-height: 50px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #f9f9f9;
+  }
+}
+
+#todoList::-webkit-scrollbar {
+  width: 8px;
+}
+#todoList::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+#todoList::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#todoList p {
+  margin: 5px 0;
+  padding: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  position: relative;
+}
+
+.btn {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(179, 179, 179);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(1.05);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.input {
+  display: inline;
+}
+#caunter{
+  position: relative;
+  top: 20px;
+}
+.fromall {
+  background: #e3e3e3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /* এই লাইনটা রাখো */
+  animation: slideIn 0.3s ease-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;          /* ফিক্সড height বাদ দাও */
+  padding: 8px 10px;     /* ভেতরে একটু স্পেস */
+  margin-bottom: 8px;    /* টাস্কগুলোর মাঝে gap */
+}
+.fromall li {
+  list-style: none;
+  flex: 1;               /* টেক্সটটা বাকি জায়গা নেবে */
+  margin-right: 10px;
+}
+.input {
+  display: flex;
+  gap: 5px;              /* বাটনের মাঝে স্পেস */
+}
+.btn {
+  width: 40px;
+  height: 28px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completed-task {
+  color: green;
+  font-weight: bold;
+  text-decoration: line-through; /* চাইলে লাইন কেটে দিতে পারো */
+}
+
