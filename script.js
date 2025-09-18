@@ -96,7 +96,7 @@ function displayTasks() {
         todoList.appendChild(taskElement);
     });
 
-    // কাউন্টার আপডেট
+    // টাস্ক কাউন্টার আপডেট করা
     let total = tasksTO.length;
     let completed = tasksTO.filter((t) => t.completed).length;
     caunter.textContent = `Total Tasks: ${total} || Completed Tasks: ${completed}`;
